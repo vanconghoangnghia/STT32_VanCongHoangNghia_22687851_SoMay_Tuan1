@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(99, 208, 239);
+            border-radius: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 8px;
+            box-sizing: border-box;
+            height: 20px;
+        }
+        .lal {
+            width: 195px;
+            margin-right: 20px;
+            text-align: left;
+        }
+
+        input {
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        label {
+            margin-left:5px;
+            margin-right: 5px;
+            margin-top: 1px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-image {
+            display: block;
+           margin-bottom: 0;
+        }
+        hr {
+            border-color: rgb(75, 74, 74);
+        }
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="ft">
+        <img class="form-image" style="width: 300px; height: 150px; margin-left: auto; margin-right: auto; display: block; margin-bottom: 0px;" src="form.png" alt="">
+        <h2 style="text-align: center; margin-top: 0px;">Registration Form</h2>
+        <div style="text-align: center;">Register your Jackson Electronics product here</div>
+        <div>
+            <div class="form-group">
+                <label class="lal" for="fname">First Name:</label>
+                <input type="text" id="fname" size="10">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" size="10">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="addr1">Address #1:</label>
+                <input type="text" id="addr1" size="25">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="addr2">Address #2:</label>
+                <input type="text" id="addr2" size="25">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="Cty">City:</label>
+                <input type="text" id="Cty" size="15">
+                <label for="state">State:</label>
+                <input type="text" id="state" size="5">
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip" size="8">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="country">Country</label>
+                <input type="text" id="country" value="United States" size="15">
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="lal" for="product">Product:</label>
+                <select name="" id="product">
+                    <option value="v1">ScanMaster</option>
+                    <option value="v1">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="lal" for="date">Date Purchased:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="seri">Serial #:</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label class="lal" for="use">Used for:</label>
+                <div style="display: flex; width: 400px">
+                    <div style="display: inline;">
+                        <div>
+                            <label for="">
+                                <input type="radio" name="check" id="use">
+                                Home
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="check">
+                                Business
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="check">
+                                Govemment
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="check">
+                                Educational Institution
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="radio" name="check">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lal" for="">System (check all that apply):</label>
+                <div style="display: flex; width: 400px;">
+                    <div style="display: inline;">
+                        <div>
+                            <label for="">
+                                <input type="checkbox" name="sys" value="1">
+                                Windows
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox" name="sys" value="2">
+                                Macintosh
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox" name="sys" value="3">
+                                UNIX
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox" name="sys" value="4">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="lal" for="comments">Comments?</label>
+                <textarea name="" id="comments" cols="50" rows="10"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <input class="form-buttons" type="submit" value="Click to register">
+                <input class="form-buttons" type="button" value="Click to cancel">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
